@@ -26,3 +26,5 @@ const calculate = function (num){
   const c4 = percentOf(c2,c3);
   return null;
 };
+
+// test
