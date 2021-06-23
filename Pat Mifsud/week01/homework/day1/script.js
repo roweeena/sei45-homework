@@ -55,7 +55,7 @@ const partTwoFunction = function(num=42){
 
 console.log("");
 console.log("📚 PART 1");
-squareNumber(44, true);
+squareNumber(3, true);
 halfNumber(3244);
 percentOf(40, 200);
 areaOfCircle(342);
@@ -82,6 +82,7 @@ console.log("👨🏻‍🦲 Dr Evil");
 drEvil(1000000);
 drEvil(3214);
 console.log("");
+
 
 //
 const mixUp = function(one, two){
@@ -121,6 +122,7 @@ const cutWordPreIng = function(word){
   const leftOfIng = word.substring(0, countToIng);
   return leftOfIng;
 }
+
 
 const verbing = function(word){
     if( word.length < 3 ){
