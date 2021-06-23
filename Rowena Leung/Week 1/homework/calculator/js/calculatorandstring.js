@@ -90,12 +90,14 @@ mixUp("dog", "dinner");
 Create a function called fixStart. It should take a single argument, a string, and return a version where all occurences of its first character have been replaced with '*', except for the first character itself. You can assume that the string is at least one character long. For example:
 
 fixStart('babble'): 'ba**le'
+
 Verbing
 Create a function called verbing. It should take a single argument, a string. If its length is at least 3, it should add 'ing' to its end, unless it already ends in 'ing', in which case it should add 'ly' instead. If the string length is less than 3, it should leave it unchanged. For example:
 
   verbing('swim'): 'swimming'
   verbing('swimming'): 'swimmingly'
   verbing('go'): 'go'
+
 Not Bad
 Create a function called notBad that takes a single argument, a string.
 
