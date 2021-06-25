@@ -75,7 +75,7 @@ const browseMovies = function(){
   let result = '';
   for(i=0; i < LMBD.length; i++ ){
     const mv = LMBD[i];
-    result += `🍿 ${mv.title} lasts for ${mv.duration} minutes. Stars ${mv.stars}. \n \n`;
+    result += `🍿 ${mv.title} lasts for ${mv.duration} minutes. Stars: ${mv.stars.join(', ')}. \n \n`;
   };
   return(result);
 };
