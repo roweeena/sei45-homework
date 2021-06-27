@@ -45,7 +45,7 @@ const sumArray = function (arr=null){
   return sum;
 };
 
-const mmultiplyArray = function (arr=null){
+const multiplyArray = function (arr=null){
   let mul = 1;
   if (arr===null) return null;
   else if (arr.length===1) return arr[0];
