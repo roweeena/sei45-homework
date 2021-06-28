@@ -125,7 +125,7 @@ const cashRegister = function(cartForParty){
   let total = 0;
   let items = Object.values(cartForParty).map((i) => Number(i));
 for (i = 0; i < items.length; i++){
-     total = total + items[i];
+     total = total + items[i]; // total += items[i] increase the total from 0 via the loop
 }
       return total;
     };
