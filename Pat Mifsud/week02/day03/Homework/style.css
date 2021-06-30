@@ -1,0 +1,49 @@
+body{
+  background-image: url(img/bg.jpg);
+  background-size: 30%;
+  background-repeat-y: no-repeat;
+  background-color: #6cd280;
+}
+
+racetrack{
+  margin-top: 25%;
+  display: block;
+}
+
+section{
+  text-align: right;
+}
+
+cat{
+  display: inline-block;
+  width: 183px;
+  background-size: contain;
+  height:130px;
+  background-image: url(img/catReady.png);
+  background-repeat: no-repeat;
+  text-align: right;
+  /* margin-right: 100%; */
+
+}
+
+
+cat.running{
+  background-image: url(img/catRun.gif);
+}
+
+cat.blue{
+  filter:hue-rotate(174deg);
+}
+
+cat.blue{
+  filter:hue-rotate(312deg);
+}
+
+
+#bubble{
+    visibility: hidden;
+    position: absolute;
+    margin-top: -75px;
+    margin-left: 200px;
+    width: 150px;
+}
