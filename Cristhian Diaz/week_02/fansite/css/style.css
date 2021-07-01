@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+  /* border: 1px solid limegreen; */
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  color: #ffffffd6;
+  letter-spacing: 1px;
+}
+
+.container {
+  max-width: 960px;
+  background-color: #181819;
+  margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    max-width: 960px;
+    height: 50px;
+    padding: 0;
+    background: black;
+    border-bottom: 2px solid grey;
+    text-align: right;
+}
+main {
+    padding: 0 1em 1em 1em;
+    text-align: center;
+}
+h2 {
+  text-align: left;
+  padding: 1em 0;
+}
+
+.menu {
+    height: 100%;
+    display: inline-flex;
+    color: #ffffffd6;
+    text-decoration: none;
+    padding: 0px 0.75em;
+    align-items: center;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    background: transparent;
+    min-width: 50px;
+}
+a:hover {
+  color: white;
+}
+
+.title {
+  margin: 0px 0 0 0;
+  text-align: center;
+  padding: 35px 0 35px 0;
+}
+
+.image {
+  margin: 0 auto;
+  border: 5px solid #ffffffab;
+  border-radius: 20px;
+  background-color: #ffffffab;
+}
+
+.image.bio {
+  padding: 1em;
+  border: 1px solid #ffffffab;
+  background-color: white;
+}
+
+p.news {
+  text-align: left;
+  color: grey;
+}
+
+.video {
+  margin: 0 auto;
+  border: 3px solid #ffffffab;
+  border-radius: 10px;
+  background-color: #ffffffab;
+}
+
+.map {
+  border-radius: 10px;
+  margin: 2em auto;
+}
+footer {
+      width: 100%;
+      max-width: 960px;
+      padding: 0;
+      background: black;
+      border-top: 2px solid grey;
+}
+footer a {
+    height: 100%;
+    color: #ffffffd6;
+    text-decoration: none;
+    padding: 0.50em 1em;
+    align-items: center;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    min-width: 50px;
+    display: block;
+}
+footer p {
+  text-align: center;
+}
