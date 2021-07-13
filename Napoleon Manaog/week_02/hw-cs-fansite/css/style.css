@@ -1,0 +1,101 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,400&display=swap');
+
+body {
+  background-color: #444;
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+}
+h1,h2 {
+  text-align: center;
+  background-color: #333;
+  color: red;
+  font-size: 200%;
+  padding: 0.5em;
+  text-transform: uppercase;
+  text-shadow: 0px 3px 3px #41E3E4;
+  border-radius: 0.5em;
+}
+
+.container {
+  /* width: 960px; */
+  max-width: 960px; /* Lazy responsive container*/
+  background-color: #deedf0;
+  margin: 0 auto; /* centers the page*/
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+.container img {
+  height: 500px;
+  width: 400px;
+  border-radius: 0.6em;
+  box-shadow: 10px 10px 10px #41E3E4;
+}
+
+.f-con {
+  display: flex;
+}
+
+.f-child{
+  flex: 1;
+  /* border: 1px solid yellow; */
+}
+
+ .f-child:first-child {
+  margin-right: 0;
+}
+
+table {
+  font-size: 17px;
+}
+
+.blurb {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.blurb p {
+  font-family: 'Merriweather', serif;
+  line-height: 1.4em;
+}
+
+iframe {
+  border-radius: 0.6em;
+  box-shadow: 10px 10px 10px #41E3E4;
+}
+
+
+
+
+nav {
+  display: flex;
+  margin-left: auto;
+  margin-right: 5%;
+  margin-top: auto;
+  vertical-align: middle;
+  list-style: none;
+}
+
+nav a {
+  transition: 0.3s ease;
+  color: red;
+  font-size: 18px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+nav a:hover {
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  padding: 6px 0;
+}
+
+a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+/*End Nav Styling*/
