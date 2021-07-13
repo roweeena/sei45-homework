@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../img/forest.jpg');
+  background-size: cover;
+  background-position: center;
+  background-size: 250%;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+#img1 {
+  width: 500px;
+  height: 500px;
+  background-image:  url('../img/cat-walk.gif');
+  background-size: cover;
+  background-position: center;
+  display: inline;
+  position: absolute;
+  margin-top: 300px;
+  left: -300px;
+}

@@ -1,0 +1,143 @@
+/* * {border: 1px solid limegreen;} */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+body {
+background: url("images/2WAnGg.jpeg");
+      background-color: #909090;
+      font-family: 'Playfair Display', serif;
+      margin:0;
+      padding: 0;
+    }
+    main {
+      max-width: 960px;
+      background-color: white;
+      margin: 0 auto;
+      border-radius: 0.5em;
+
+    }
+    nav{
+      text-align:right;
+      margin: 12px
+
+    }
+    nav a {
+      color:white;
+      text-decoration: none;
+      font-size: 20px;
+      padding: 5px;
+      text-shadow:1px 2px 2px #000
+    }
+    nav a:hover {
+      color: white;
+      border-bottom: 2px solid #fed8b1;
+    }
+
+    aside {
+margin: 12px;
+      width: 21%;
+      display: inline-block;
+      vertical-align: top;
+      padding: 1em;
+      border-radius: 0.5em;
+      box-shadow: 0px 15px 15px black;
+      right: 50%;
+    }
+     aside a {
+       color: black;
+       text-decoration: none;
+     }
+
+.container {
+  padding: 10px;
+}
+
+.career-sage, .career-apollo, .career-hos{
+  padding: 15px;
+}
+
+  .image-apollo {
+    overflow: hidden;
+    width:49%;
+    display:inline;
+    float:right;
+  }
+  .images-hos {
+    overflow: hidden;
+
+    display:inline;
+    float:right;
+  }
+
+h1 {
+padding: 20px;
+  text-align:center;
+  color: white;
+  text-shadow:1px 2px 2px #000
+}
+
+h2{
+  padding: 12px;
+}
+    p {
+      font-size: 16px;
+    }
+
+    .category{
+padding: 10px;
+margin: 20px;
+      display:inline-block;
+      text-align: center;
+      line-height: 100px;
+      width: 150px;
+        height: 100px;
+        border: 1px solid #838383;
+        border-radius: 0.5em;
+        box-shadow: 5px 5px #888888;
+    }
+.category a {
+  color: black;
+  text-decoration: none;
+}
+
+.category:hover {
+  background-color: gray;
+}
+.category:hover span{
+  color: white;
+}
+
+blockquote{
+  display:block;
+  background: #fff;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+  border-left: 15px solid #c76c0c;
+  border-right: 2px solid #c76c0c;
+  box-shadow: 2px 2px 15px #ccc;
+}
+    footer {
+      text-align: right;
+      font-size: 12px;
+      margin: 0 auto;
+      padding: 12px;
+      color: white;
+      text-shadow:1px 2px 2px #000
+
+
+    }
+    #instagram  {
+position: absolute;
+
+      display: inline-block;
+   margin-left: 12px;
+   margin-right: auto;
+    }
+
+    #twitter {
+      position: absolute;
+
+             display: inline-block;
+          margin-left: 50px;
+          margin-right: auto;
+           }
+    }

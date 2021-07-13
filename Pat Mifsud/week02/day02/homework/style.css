@@ -1,0 +1,149 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+
+root {
+
+}
+
+
+*{
+  margin: 0;
+  outline: none;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'menlo', courier, monospace;
+  -webkit-tap-highlight-color: transparent;
+  color: #55606B;
+  font-size: 16pt
+}
+
+html{
+  background: #E8E2CF;
+  padding:4%;
+}
+
+body{
+  border-radius: 30pt;
+  padding:3%;
+  background: #DDD3B4;
+}
+
+main{
+  border-radius: 30pt;
+  width:80%;
+  min-width:300px;
+  height:100%;
+  overflow-y: scroll;
+  background: #ABB4BB;
+  box-shadow: 0px -10px 40px -10px #90B1D1 inset;
+  padding:8% 5%;
+}
+
+header{
+  font-weight: bold;
+  margin-bottom: 70pt;
+}
+
+nav{
+  margin-bottom: 50pt;
+  display: flex;
+  flex-wrap: wrap;
+} nav a{
+  padding: 5pt 20pt;
+  background: #ABB4BB;
+  border: 2pt solid #ABB4BB;
+  text-decoration: none;
+  border-radius: 2pt;
+} nav a:hover{
+  color:#55606B;
+  background: #ABB4BB;
+  border: 2pt solid #55606B;
+} nav a.selected{
+  color:#ABB4BB;
+  background: #55606B;
+  border: 2pt solid #55606B;
+}
+
+div.sticky{
+  position: absolute;
+  bottom: 3%;
+  right: 2.5%;
+
+  height: 35%;
+  width: 30%;
+  max-width: 350px;
+
+  overflow-y: scroll;
+
+  padding: 4% 2% 2% 3%;
+
+  transform: rotate(2deg);
+  background: linear-gradient(180deg, #F2F2B8 0%, #F9F9B6 17.19%, #FFFFCB 17.2%, #FFFFCB 100%);
+  box-shadow: 5px 5px 10px -10px #00000066;
+
+  font-family: 'Caveat', sans-serif;
+  font-size: 20pt;
+  color: #8e8e68;
+}
+
+ul{
+  margin-left: 20pt;
+}
+
+::selection{
+  background:#55606B;
+  color:#ABB4BB;
+}
+
+a:hover{
+  background:#55606B;
+  color:#ABB4BB;
+}
+
+p{
+  margin-left: 10pt;
+  line-height: 1.6;
+}
+
+h2{
+  margin-bottom:15pt;
+  font-weight: normal;
+}
+
+img{
+  width:80%;
+}
+
+@media screen and (max-width: 700px) {
+  main{
+    width:100%;
+  }
+
+  body{
+    padding:7% 4% 12% 4% ;
+  }
+
+  html{
+    padding:5% 4% 20% 4% ;
+  }
+
+.sticky{
+  display:none;
+}
+
+}
+
+/* Animation */
+span.blink{
+  animation-name: blinkc;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;}
+
+  @keyframes blinkc {
+    0%  { opacity: 1}
+    49%  { opacity: 1}
+    50% { opacity: 0}
+    99% { opacity: 0}
+  }
