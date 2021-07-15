@@ -1,0 +1,32 @@
+body{
+max-width: 960px;
+
+}
+
+a {
+  color: white;
+}
+
+p {
+  text-align: left;
+}
+img {
+
+  display: block;
+margin: 0 40px 0 700px;
+
+  max-width: 100%;
+  position: relative;
+  top: -3px;
+border-style: solid;
+
+}
+input {
+  margin-top: 10px
+}
+
+
+.button {
+  margin-top:20px;
+
+}
