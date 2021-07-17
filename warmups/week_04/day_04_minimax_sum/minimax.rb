@@ -15,31 +15,31 @@
 # ```
 
 # declare the function
-# def minimax_sum arr
-#   # sort the array
-#   p sorted_arr = arr.sort
-#   # count sum of the first 4 elements of the array -> min_sum
-#   min_sum = sorted_arr.take(4).inject(&:+)
-#   # count sum of the last 4 elements of the array -> max_sum
-#   max_sum = sorted_arr.drop(1).inject(&:+)
-
-#   puts "min_sum: #{min_sum}; max_sum: #{max_sum}"
-# end
-
-# minimax_sum [100, 9, 5, 3, 7]
-
-### BONUS
-
-def minimax_sum arr, num
+def minimax_sum arr
+  # sort the array
   p sorted_arr = arr.sort
-
-  # count sum of the first `num` elements of the array -> min_sum
-  p min_sum = sorted_arr.take(num).inject(&:+);
-  # count sum of the last `num` elements of the array -> max_sum
-  p max_sum = sorted_arr.drop(arr.size - num).inject(&:+);
+  # count sum of the first 4 elements of the array -> min_sum
+  min_sum = sorted_arr.take(4).inject(&:+)
+  # count sum of the last 4 elements of the array -> max_sum
+  max_sum = sorted_arr.drop(1).inject(&:+)
 
   puts "min_sum: #{min_sum}; max_sum: #{max_sum}"
 end
 
-minimax_sum [1, 9, 5, 3, 7], 2
-minimax_sum [1, 9, 5, 3, 7, 11], 3
+minimax_sum [100, 9, 5, 3, 7]
+
+### BONUS
+
+# def minimax_sum arr, num
+#   p sorted_arr = arr.sort
+
+#   # count sum of the first `num` elements of the array -> min_sum
+#   p min_sum = sorted_arr.take(num).inject(&:+);
+#   # count sum of the last `num` elements of the array -> max_sum
+#   p max_sum = sorted_arr.drop(arr.size - num).inject(&:+);
+
+#   puts "min_sum: #{min_sum}; max_sum: #{max_sum}"
+# end
+
+# minimax_sum [1, 9, 5, 3, 7], 2
+# minimax_sum [1, 9, 5, 3, 7, 11], 3
