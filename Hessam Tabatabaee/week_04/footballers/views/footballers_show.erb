@@ -1,0 +1,20 @@
+<h1>
+  <%= @player["name"] %>
+</h1>
+
+<h2>
+  Family: <%= @player["family"] %>
+</h2>
+
+<h2>
+  National Goals: <%= @player["national_goals"] %>
+</h2>
+
+<% unless @player["image"].nil? || @player["image"].empty? %>
+  <img src="<%= @player["image"] %>" alt="<%= @player["name"] %>">
+<% end %>
+
+<div class="controls">
+    <a href="/footballers/<%= @player["id"] %>/edit">Edit player</a>
+    <a href="/footballers/<%= @player["id"] %>/delete">Delete player</a>
+</div>
