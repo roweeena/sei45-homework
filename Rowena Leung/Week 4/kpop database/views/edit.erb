@@ -1,0 +1,30 @@
+<h1>Edit Group</h1>
+<form action="/index/<%=@kpop["id"]%>" method="post">
+  <label >
+  Name:
+  <input name="name" placeholder="Group Name" required value = "<%=@kpop["name"]%>">
+  </label>
+
+  <label>
+  Members:
+  <input type="number" name="members" placeholder="Number of members" value="<%=@kpop["members"]%>" >
+  </label>
+
+  <label >
+  Best Song:
+  <input name="best_song" placeholder="Their number one hit song" required value=<%=@kpop["best_song"]%>>
+  </label>
+
+  <label>
+  Image:
+  <input type="url" name="image" placeholder="http://..." value="<%=@kpop["image"]%>">
+  </label>
+
+  <label>
+  Still active:
+  <input type="checkbox" name="active" value= 1>
+
+  </label>
+  </div>
+  <button >Edit Group</button>
+</form>

@@ -1,0 +1,31 @@
+<h1>New Group</h1>
+<form action="/index" method="post">
+  <label >
+  Name:
+  <input name="name" placeholder="Group Name" required>
+  </label>
+
+  <label>
+  Members:
+  <input type="number" name="members" placeholder="Number of members" >
+  </label>
+
+  <label >
+  Best Song:
+  <input name="best_song" placeholder="Their number one hit song" required>
+  </label>
+
+  <label>
+  Image:
+  <input type="url" name="image" placeholder="http://...">
+  </label>
+
+  <label>
+  Still active:
+  <div class="active">
+  <input type="checkbox" name="active" value="yes">
+  </div>
+  </label>
+
+  <button >Add Group</button>
+</form>
