@@ -1,0 +1,18 @@
+
+<div id="cover" style="background-image:url('<%= @image %>');">
+    <div class="overlay"></div>
+</div>
+
+<h1><%= @name %></h1>
+<p><%= @desc %></p>
+<%# <a href="">Purchase</a> %>
+
+
+
+<p>Take a look at some other books:</p>
+    <div class="recent">
+        <% $recent_search.each do |elem| %>
+            <a class="recent" href="/result?query=<%= elem %>"><%= elem %></a>
+        <% end %>
+    </div>
+
