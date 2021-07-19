@@ -1,0 +1,22 @@
+<h1> Edit Instrument </h1>
+
+<form action="/instruments/<%= @instrument["id"]%>" method="post">
+
+  <label >
+    Name:
+    <input name="name" Placeholder="Ney" required value= "<%= @instrument["name"]%>">
+  </label>
+  <label >
+    Type:
+    <input name="cat" Placeholder="Winds" required value= "<%= @instrument["cat"]%>">
+  </label>
+  <label >
+    Geo:
+    <input name="geo" Placeholder="Iran" value= "<%= @instrument["geo"]%>">
+  </label>
+  <label >
+    Image:
+    <input name="image" type="url" Placeholder="http://....." value= "<%= @instrument["image"]%>" >
+  </label>
+  <button> Update </button>
+</form>
