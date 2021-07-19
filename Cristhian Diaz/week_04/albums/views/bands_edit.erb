@@ -1,0 +1,15 @@
+<h1>Edit Band</h1>
+
+<form action="/bands/<%= @band.id %>" method="post">
+  <label>
+    Name:
+    <input name="name" placeholder="Nirvana" required value="<%= @band.name %>">
+  </label>
+
+  <label>
+    Genre:
+    <input name="genre" placeholder="Rock" value="<%= @band.genre %>">
+  </label>
+
+  <button>Update band</button>
+</form>

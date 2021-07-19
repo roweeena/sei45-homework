@@ -1,0 +1,11 @@
+<h1>
+  <%= @band.name %>
+</h1>
+<h2>Genre: <%= @band.genre %></h2>
+
+
+
+<div class="controls">
+  <a href="/bands/<%= @band.id %>/edit">Edit band</a>
+  <a href="/bands/<%= @band.id %>/delete">Delete band</a>
+</div>
