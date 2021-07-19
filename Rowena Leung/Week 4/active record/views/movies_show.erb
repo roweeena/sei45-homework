@@ -1,0 +1,34 @@
+<h1>
+  <%=@movie["name"]%>
+</h1>
+<h3>
+  Year of Release:
+  <%=@movie["year_release"]%>
+</h3>
+<p>
+  Director:
+    <% unless @movie.director.nil? %>
+    <%# unless no director, find the director associated with the movie and return their first+last name %>
+    <a href="/directors/<%= @movie.director_id %>">
+          <%= @movie.director.first_name %>  <%= @movie.director.last_name %>
+        </a>
+        <% end %>
+</p>
+<p>
+Summary:
+<%=@movie["summary"]%>
+</p>
+
+
+<% unless @movie["image"].nil? || @movie["image"].empty?%>
+<img src="<%=@movie["image"] %>" alt="<%= @movie["name"] %>">
+<%end%>
+
+<div class="edit_delete">
+  <button>
+  <a href="/movies/<%=@movie["id"]%>/edit">Edit Movie</a>
+  </button>
+<button>
+  <a href="/movies/<%=@movie["id"]%>/delete">Delete Movie</a>
+  </button>
+</div>
