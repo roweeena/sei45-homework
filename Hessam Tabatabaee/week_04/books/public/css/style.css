@@ -1,0 +1,37 @@
+body {
+  background-color: aquablue;
+  background-image: url(/img/library2.jpeg);
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1em;
+  min-height: 90vh; /* 90% of the viewport (window) height */
+}
+
+form label {
+  color: black;
+}
+
+h2 {
+  color: black;
+}
+
+h1 {
+  color: black;
+}
+
+a {
+  color: #b58741;
+}
+
+.book_cover {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.book_title p {
+  color: black;
+}

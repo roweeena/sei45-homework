@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align:center;
+    text-decoration:none;
+    border-radius: 4pt;
+    margin-bottom:20pt;
+    line-height: 1.5;
+
+}
+
+html{
+    padding: 5vh 0 0 0;
+}
+
+body{
+    max-width: 800px;
+    height: 90vh;
+    border:solid 1px #564e4b27;
+    margin: 0 auto;
+
+}
+
+nav{
+    width: 100%;
+    padding: 6pt 12pt;
+    text-align: left;
+    border-radius: 0;
+    border-bottom: solid 1px #564e4b27;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+main{
+    padding: 10pt;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+img{
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+#cover{
+    height: 165px;
+    padding:0;
+    width: 128px;
+}
+.overlay{
+    background: linear-gradient(to right, rgb(0 0 0 / 39%) 3px, rgba(255, 255, 255, 0.5) 5px, rgba(255, 255, 255, 0.25) 7px, rgba(255, 255, 255, 0.25) 10px, transparent 12px, transparent 16px, rgba(255, 255, 255, 0.25) 17px, transparent 22px);
+    box-shadow: 0 0 5px -1px black, inset -1px 1px 2px rgb(255 255 255 / 50%);
+    margin: 0;
+    width: 100%;
+    height: 165px;
+    display: inline-block;
+}
+
+form{
+    width: 100%;
+    max-width: 250pt;
+}
+
+form *{
+    display: block;
+}
+
+form button{
+    color: white;
+    margin-left: auto ;
+    margin-right: auto;
+    font-size: 17px;
+    border-radius: 5px;
+    border: none;
+    background: black;
+    padding: 8px 30px;
+    cursor: pointer;
+}
+
+form input{
+    padding:10px 30px 10px 10px;
+    border:solid 1px black;
+    background:none;
+    text-align: left;
+    border-radius: 5px;
+    background: white;
+    width:100%;
+}
+
+footer{
+    width: 100%;
+    border-top: solid 1px #564e4b27;
+    border-radius: 0;
+    padding: 20pt;
+    margin: 30pt 0 50pt 0;
+}
+
+.recent{
+    display: flex;
+    gap: 0 12pt;
+    max-width: 70%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.recent a{
+    margin-bottom:5pt;
+}

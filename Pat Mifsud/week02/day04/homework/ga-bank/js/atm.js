@@ -30,6 +30,7 @@ const deposit = function(account, amount){
   $(`#${account} .balance`).text(ac[account].bal);
 }
 
+
 const withdraw = function(account, amount){
   if (ac[account].bal < +amount){
     polipop.add({
