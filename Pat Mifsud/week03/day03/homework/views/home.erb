@@ -1,0 +1,21 @@
+<img class="header" src="https://i.giphy.com/media/3ov9kbWTS6WVs4vao0/giphy.webp">
+<h1>Simple book search</h1>
+<form action="/result">
+    <label for="query">Type in the name of a book here:</label>
+    <input type="text" placeholder="e.g. Harry Potter, How to cook toast" name="query" required> 
+    <button>Search</button>
+</form>
+<hr>
+<p>Or browse recent searches:</p>
+    <div class="recent">
+        <% $recent_search.each do |elem| %>
+            <a class="recent" href="/result?query=<%= elem %>"><%= elem %></a>
+        <% end %>
+    </div>
+
+
+
+
+
+
+
