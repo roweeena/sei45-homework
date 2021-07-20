@@ -1,0 +1,17 @@
+<h1>Mountains List</h1>
+<table>
+  <tr>
+    <th><%= link_to "Mountain Name", :sort => "name"%> </th>
+    <th><%= link_to "Range", :sort => "range"%> </th>
+    <th><%= link_to "Location", :sort => "location"%> </th>
+    <th><%= link_to "Prominence", :sort => "prominence DESC"%> </th>
+  </tr>
+<% @mountains.each do |mountain| %>
+  <tr>
+    <td><%= link_to mountain.name, mountain_path(mountain.id) %></td>
+    <td><%= mountain.range %></td>
+    <td><%= mountain.location %></td>
+    <td><%= number_to_human(mountain.prominence, units: {unit: "meters"}) %></td>
+  </tr>
+<% end %>
+</table>
