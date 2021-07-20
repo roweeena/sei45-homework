@@ -1,0 +1,34 @@
+<h1>New Team</h1>
+
+<form action="/teams" method="post">
+
+  <div>
+    <label>
+      Name:
+      <input name="name" placeholder="eg. Brazil" required>
+    </label>
+  </div>
+
+  <div>
+    <label>
+      World Cup Appearance:
+      <input type="number" name="world_cup_appearance" placeholder="enter a number" required>
+    </label>
+  </div>
+
+  <div>
+    <label>
+      World Cup Champions:
+      <input type="number" name="world_cup_champions" placeholder="enter a number">
+    </label>
+  </div>
+
+  <div>
+    <label>
+      Image:
+      <input type="url" name="image" placeholder="eg. http://...">
+    </label>
+  </div>
+
+  <button>Add Team</button>
+</form>

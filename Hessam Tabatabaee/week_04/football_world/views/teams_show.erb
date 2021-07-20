@@ -1,0 +1,30 @@
+<div>
+  <h1>
+    <%= @team.name %>
+  </h1>
+</div>
+
+<div>
+  <h2>
+    World Cup Appearance: <%= @team.world_cup_appearance %>
+  </h2>
+</div>
+
+<div>
+  <% if @team.world_cup_champions.nil? %>
+    <h2>World Cup Champions: No data available
+  <% else %>
+    <h2>World Cup Champions: <%= @team.world_cup_champions %></h2>
+  <% end %>
+</div>
+
+<div>
+  <% unless @team.image.nil? || @team.image.empty? %>
+    <img src="<%= @team.image %>" alt="<%= @team.name %>">
+  <% end %>
+</div>
+
+<div class="controls">
+    <a href="/teams/<%= @team.id %>/edit">Edit Team</a>
+    <a href="/teams/<%= @team.id %>/delete">Delete Team</a>
+</div>
