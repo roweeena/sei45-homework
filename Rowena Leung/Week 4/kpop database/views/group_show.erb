@@ -1,0 +1,22 @@
+<h1>
+  <%= @kpop["name"] %>
+</h1>
+<p>
+  Members: <%=@kpop["members"] %>
+  </p>
+  <p>
+  Best Song: <%=@kpop["best_song"] %>
+  </p>
+  <p>
+  Still Active: <%=@kpop["active"]== 1 ? "yes" : "no" %>
+  </p>
+
+<% unless @kpop["image"].nil? || @kpop["image"].empty?%>
+<img src="<%=@kpop["image"] %>" alt="<%= @kpop["name"] %>">
+
+<%end%>
+
+<div class="edit_delete">
+  <a href="/index/<%= @kpop["id"] %>/edit">Edit Group</a>
+  <a href="/index/<%= @kpop["id"] %>/delete">Delete</a>
+</div>

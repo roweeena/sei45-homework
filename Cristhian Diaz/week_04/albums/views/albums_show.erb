@@ -1,0 +1,13 @@
+<h1>
+  <%= @album.name %>
+</h1>
+<h2>Cover: </h2>
+
+<% unless @album.cover.nil? || @album.cover.empty? %>
+  <img src="<%= @album.cover %>" alt="<%= @album.name %>">
+<% end %>
+
+<div class="controls">
+  <a href="/albums/<%= @album.id %>/edit">Edit album</a>
+  <a href="/albums/<%= @album.id %>/delete">Delete album</a>
+</div>

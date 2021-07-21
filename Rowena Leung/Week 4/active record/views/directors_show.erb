@@ -1,0 +1,38 @@
+<h1>
+  <%=@director["first_name"]%> <%=@director["last_name"]%>
+</h1>
+<h3>
+  Country:
+  <%=@director["country"]%>
+</h3>
+
+<p>
+  Number of Awards: <%=@director["number_of_awards"]%>
+</p>
+
+<% unless @director.movies.empty? %>
+  <p>Filmography:</p>
+  <%# unless no movie, find the movies associated with the director and return the values in a list%>
+  <ul>
+    <% @director.movies.each do |movie| %>
+      <li>
+        <a href="/movies/<%= movie.id %>">
+          <%= movie.name %>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<% unless @director["image"].nil? || @director["image"].empty?%>
+<img src="<%=@director["image"] %>" alt="<%= @director["first_name"] %> <%= @director["last_name"] %>">
+<%end%>
+
+<div class="edit_delete">
+  <button>
+  <a href="/directors/<%=@director["id"]%>/edit">Edit Director</a>
+  </button>
+  <button>
+  <a href="/directors/<%=@director["id"]%>/delete">Delete Director</a>
+  </button>
+</div>

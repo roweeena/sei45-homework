@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap');
+
+body {
+  background: url('/images/paolo-chiabrando-G16kFHYvCoQ-unsplash.jpg') no-repeat center center fixed;
+  background-color: aliceblue;
+  max-height: 100%;
+  background-size: cover;
+  color: white;
+  font-family: 'Shippori Mincho B1', serif;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.2);
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+nav {
+  text-align: right;
+
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.edit_delete a {
+  color: black;
+  font-family: 'Shippori Mincho B1', serif;
+}
+img {
+  max-width: 100%
+}
