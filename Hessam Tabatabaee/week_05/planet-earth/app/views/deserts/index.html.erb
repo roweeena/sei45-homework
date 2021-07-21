@@ -1,0 +1,7 @@
+<h1>All Deserts</h1>
+
+<% @desert.each do |desert| %>
+<p>
+  <%= link_to desert.name, desert_path(desert.id) %>
+</p>
+<% end %>

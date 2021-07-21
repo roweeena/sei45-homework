@@ -1,0 +1,25 @@
+<h2>Edit Desert</h2>
+
+<form action="<%= desert_path(@desert.id) %>" method="post">
+  <label>
+    Name:
+    <input type="text" name="name" required value="<%= @desert.name %>">
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image" value="<%= @desert.image %>">
+  </label>
+
+  <label>
+    Location:
+    <input type="text" name="location" value="<%= @desert.location%>">
+  </label>
+
+  <label>
+    Area:
+    <input type="text" name="area" value="<%= @desert.area %>">
+  </label>
+
+  <button>Update desert</button>
+</form>

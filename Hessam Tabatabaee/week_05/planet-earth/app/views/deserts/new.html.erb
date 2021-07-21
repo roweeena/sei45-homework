@@ -1,0 +1,25 @@
+<h2>New Desert</h2>
+
+<form action="<%= deserts_path %>" method="post">
+  <label>
+    Name:
+    <input type="text" name="name" required>
+  </label>
+
+  <label>
+    Image:
+    <input type="url" name="image">
+  </label>
+
+  <label>
+    Location:
+    <input type="text" name="location">
+  </label>
+
+  <label>
+    Area:
+    <input type="text" name="area">
+  </label>
+
+  <button>Create desert</button>
+</form>
