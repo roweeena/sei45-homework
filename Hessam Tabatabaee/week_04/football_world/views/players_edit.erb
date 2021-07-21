@@ -1,0 +1,34 @@
+<h1>Edit Player</h1>
+
+<form action="/players/<%= @player.id %>" method="post">
+
+  <div>
+    <label>
+      Name:
+      <input name="name" placeholder="eg. Pauolo" required value="<%= @player.name %>">
+    </label>
+  </div>
+
+  <div>
+    <label>
+      Family:
+      <input name="family" placeholder="eg. Maldini" required value="<%= @player.family %>">
+    </label>
+  </div>
+
+  <div>
+    <label>
+      National Goals:
+      <input type="number" name="national_goals" placeholder="enter a number" value="<%= @player.national_goals %>">
+    </label>
+  </div>
+
+  <div>
+    <label>
+      Image:
+      <input type="url" name="image" placeholder="eg. http://..." value="<%= @player.image %>">
+    </label>
+  </div>
+
+  <button>Update Player</button>
+</form>
