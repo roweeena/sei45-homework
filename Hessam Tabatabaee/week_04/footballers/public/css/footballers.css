@@ -1,0 +1,30 @@
+body {
+  background-color: #fddddd;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+nav {
+  text-align: right;
+}
+
+nav a {
+  color: brown;
+  padding: 0 10px;
+}
+
+.controls {
+  text-align: left;
+}
+
+.controls a {
+  color: brown;
+  padding: 0 5px;
+}
+
+img {
+  max-width: 100%;
+}

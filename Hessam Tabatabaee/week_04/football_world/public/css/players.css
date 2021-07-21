@@ -1,0 +1,61 @@
+body {
+  background-color: black;
+  background-image: url(/img/world-cup3.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 3em;
+  min-height: 100vh; /* 90% of the viewport (window) height */
+  color: #bae8ff;
+}
+
+h1, h2 {
+  color: white;
+}
+
+nav {
+  text-align: right;
+}
+
+nav a {
+  color: white;
+  padding: 0 5px;
+}
+
+.all_teams, .all_players {
+  color: #bae8ff;
+}
+
+.controls {
+  text-align: left;
+}
+
+.controls a {
+  color: white;
+  padding: 0 5px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.home_title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cup_image {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+
+header {
+  margin-bottom: 40px;
+}
