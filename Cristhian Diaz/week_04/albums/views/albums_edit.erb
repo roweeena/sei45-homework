@@ -1,0 +1,15 @@
+<h1>Edit Album</h1>
+
+<form action="/albums/<%= @album.id %>" method="post">
+  <label>
+    Name:
+    <input name="name" placeholder="Black Album" required value="<%= @album.name %>">
+  </label>
+
+  <label>
+    Cover:
+    <input name="cover" type="url" placeholder="http://..." value="<%= @album.cover %>">
+  </label>
+
+  <button>Update Album</button>
+</form>
