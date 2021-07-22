@@ -1,0 +1,10 @@
+<h1>All Directors</h1>
+
+<%@directors.each do |director|%>
+<%# looping through each director in the model and print out  %>
+<p>
+  <a href="/directors/<%=director["id"]%>">
+    <%=director["first_name"]%> <%=director["last_name"]%>
+  </a>
+</p>
+<%end%>

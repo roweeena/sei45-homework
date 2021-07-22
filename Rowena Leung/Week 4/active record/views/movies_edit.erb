@@ -1,0 +1,30 @@
+<h1>Edit Movie</h1>
+<form action="/movies/<%= @movie["id"] %>" method="post">
+  <label>
+    Name:
+    <input type="text" name="name" value="<%=@movie["name"]%>" required>
+  </label>
+  <label>
+    Directed by:
+    <select name="director_id">
+      <option value=""></option>
+      <%Director.all.each do |director|%>
+    <%# dropdown menu to select from existing directors. <all.each> loads all the records from the table in memory and then iterates over those records. then each record becomes an option.  %>
+      <option value="<%=director.id%>" <%= "selected" if director.id == @movie.director_id%>><%=director.first_name%> <%=director.last_name%></option>
+      <% end %>
+    </select>
+  </label>
+  <label>
+    Year of Release:
+    <input type="number" name="year_release" value="<%=@movie["year_release"]%>" required>
+  </label>
+  <label>
+    Summary:
+    <input type="text" name="summary" value="<%=@movie["summary"]%>">
+  </label>
+  <label>
+  Image:
+  <input type="url" name="image" placeholder="http://..." value="<%=@movie["image"]%>">
+  </label>
+  <button>Edit movie</button>
+</form>

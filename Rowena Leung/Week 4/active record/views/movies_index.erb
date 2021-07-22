@@ -1,0 +1,10 @@
+<h1>All Movies</h1>
+
+<%@movies.each do |movie|%>
+<%# looping through each movie in the model and print out  %>
+<p>
+  <a href="/movies/<%=movie["id"]%>">
+    <%=movie["name"]%>
+  </a>
+</p>
+<%end%>

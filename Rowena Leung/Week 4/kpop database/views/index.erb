@@ -1,0 +1,9 @@
+<h1>All Gen 2 Kpop Groups</h1>
+
+<%@kpop.each do |group|%>
+<p>
+  <a href="/index/<%=group["id"]%>">
+  <%= group["name"]%>
+</a>
+</p>
+<%end%>
