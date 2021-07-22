@@ -1,0 +1,12 @@
+<h1>Play Rock, Paper, Scissors</h1>
+
+<p>You played: <%=@users_choice%></p>
+<p>The computer played: <%=@computers_choice%> </p>
+
+<%if  @users_choice != @computers_choice %>
+<h5>You lost!  <a href="/rock-paper-scissors">Play again!</a></h5>
+<img src="/assets/4584.jpeg" width="200" alt="">
+<%else%>
+<h5>Congratulations! You won!</h5>
+<img src="/assets/istockphoto-119036308-612x612.jpeg" width="200" alt="">
+<%end%>
