@@ -1,0 +1,9 @@
+<h1> Eastern Instrument</h1>
+
+<% @instruments.each do |instrument| %>
+<p>
+  <a href="/instruments/<%= instrument["id"] %>">
+    <%= instrument ["name"] %>
+  </a>
+</p>
+  <% end %>
