@@ -1,0 +1,15 @@
+<%= form_for @team do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :worldcup_appearance %>
+  <%= f.number_field :worldcup_appearance %>
+
+  <%= f.label :worldcup_champions %>
+  <%= f.text_field :worldcup_champions, :placeholder => 'eg. 1986, 2012' %>
+
+  <%= f.label :flag %>
+  <%= f.url_field :flag %>
+
+  <%= f.submit %>
+  <% end %>
