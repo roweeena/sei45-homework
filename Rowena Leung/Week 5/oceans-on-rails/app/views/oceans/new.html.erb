@@ -1,0 +1,26 @@
+<h2>New Ocean</h2>
+
+<form action="<%= oceans_path %>" method="post">
+  <label>
+    Name:
+    <input name="name" type="text" required>
+  </label>
+  <label>
+    Image:
+    <input name="image" type="url">
+  </label>
+  <label>
+    Area:
+    <input name="area" type="number">
+  </label>
+  <label>
+    Volume:
+    <input name="volume" type="number">
+  </label>
+  <label>
+    Location:
+    <input name="location" type="text">
+  </label>
+
+  <button>Create Ocean</button>
+</form>

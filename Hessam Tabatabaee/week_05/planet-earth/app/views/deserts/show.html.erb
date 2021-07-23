@@ -1,0 +1,16 @@
+<h2><%= @desert.name %></h2>
+
+<div class="desert_image">
+  <%= image_tag @desert.image, :class => 'feature' if @desert.image.present? %>
+</div>
+
+<ul>
+  <li>Name: <%= @desert.name %></li>
+  <li>Location: <%= @desert.location %></li>
+  <li>Area: <%= number_to_human @desert.area%> Sq Km</li>
+</ul>
+
+<div class="controls">
+  <%= link_to 'Edit desert', edit_desert_path(@desert.id) %>
+  <%= button_to 'Delete desert', desert_path(@desert.id), :method => :delete %>
+</div>

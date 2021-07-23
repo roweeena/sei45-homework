@@ -1,0 +1,13 @@
+<h2><%= @ocean.name %></h2>
+<%= image_tag @ocean.image, :class => 'feature' if @ocean.image.present?%>
+<ul>
+  <li>Name: <%= @ocean.name %></li>
+  <li>Area: <%= number_to_human @ocean.area %> km² </li>
+  <li>Volume: <%= number_to_human @ocean.volume %> km³</li>
+  <li>Location: <%= @ocean.location %></li>
+
+</ul>
+<div class="editor">
+  <%= link_to 'Edit Ocean', edit_ocean_path(@ocean.id) %>
+  <%= link_to 'Destroy Ocean', ocean_path(@ocean.id), :method => :delete %>
+</div>

@@ -1,0 +1,5 @@
+<h2>All oceans</h2>
+<% @oceans.each do |ocean| %>
+
+<p><%= link_to ocean.name, ocean_path(ocean.id) %></p>
+<% end %>
