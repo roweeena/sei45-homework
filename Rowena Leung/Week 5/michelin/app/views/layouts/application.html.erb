@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Michelin Star database</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav>
+        <%= link_to 'Home', '/' %>
+        |
+        <%= link_to 'All Chefs', chefs_path %>
+        <%= link_to 'New Chef', new_chef_path %>
+        |
+        <%= link_to 'All Restaurants', restaurants_path %>
+        <%= link_to 'New Restaurant', new_restaurant_path %>
+      </nav>
+    <%= yield %>
+    </div>
+  </body>
+</html>

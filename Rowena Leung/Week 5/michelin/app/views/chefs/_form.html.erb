@@ -1,0 +1,16 @@
+<%= form_for @chef do |f| %>
+
+<%= f.label :name, "Name:" %>
+<%= f.text_field :name, :required => true %>
+
+<%= f.label :nationality, "Nationality:" %>
+<%= f.text_field :nationality %>
+
+<%= f.label :michelin, "Number of Michelin stars:" %>
+<%= f.number_field :michelin %>
+
+<%= f.label :image, "Image:" %>
+<%= f.url_field :image%>
+
+<%= f.submit %>
+<% end %>

@@ -1,0 +1,13 @@
+<h1>All Chefs</h1>
+
+ <% @chefs.each do |chef| %>
+<%= link_to image_tag(chef.image, :class => 'thumb'), chef if chef.image.present? %>
+
+
+<ul>
+  <li>Name: <%= link_to chef.name, chef %> </li>
+  <li>Nationality: <%= chef.nationality %> </li>
+  <li>Michelin stars: <%= chef.michelin %></li>
+</ul>
+
+<% end %>
