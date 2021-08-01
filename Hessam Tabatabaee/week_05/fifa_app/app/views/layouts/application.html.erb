@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FifaApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+    <div class="container">
+      <nav>
+        <%= link_to 'All Teams', teams_path %>
+        <%= link_to 'New Team', new_team_path %>
+        |
+        <%= link_to 'All Players', players_path %>
+        <%= link_to 'New Player', new_player_path %>
+      </nav>
+
+      <body>
+        <%= yield %>
+      </body>
+    </div>
+</html>

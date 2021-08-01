@@ -1,0 +1,24 @@
+<h2><%= @player.name %></h2>
+
+<ul>
+  <li>Family name: <%= @player.family %></li>
+
+  <% if @player.team.present? %>
+    <li>Team: <%= link_to @player.team.name, team_path(@player.team) %></li>
+  <% end %>
+
+  <% if @player.national_goals.nil? %>
+    <li>National Goals: No data available</li>
+  <% else %>
+    <li>National Goals: <%= @player.national_goals %></li>
+  <% end %>
+
+  <% if @player.image.present? %>
+    <%= image_tag @player.image, :class => 'feature' %>
+  <% end %>
+</ul>
+
+<div class="controls">
+  <%= link_to 'Edit player', edit_player_path(@player) %>
+  <%= link_to 'Delete player', @player, :method => 'delete', :data => { :confirm => 'Are you sure?' } %>
+</div>
