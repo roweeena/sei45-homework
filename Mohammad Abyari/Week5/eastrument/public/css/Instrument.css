@@ -1,0 +1,41 @@
+*{
+  border: 1px solid black;
+}
+body {
+  color: black;
+  background-color: rgba(162, 114, 67, 1);
+
+}
+.container {
+  width: 900px;
+  margin: 0 auto;
+  background-color: rgba(162, 114, 67, 1);
+}
+
+h1{
+  font-size: 60px;
+}
+
+nav a {
+  color: brown;
+  text-align: right;
+  margin: 0 auto;
+}
+.nav{
+  text-align: right;
+  margin: 0px 40px 0px 0px;
+}
+.center{
+  margin: 30px auto;
+
+}
+.showimg {
+  max-width:60%;
+  max-height:60%;
+  margin: 10px auto;
+}
+.showimg {
+  max-width:100%;
+  max-height:60%;
+  margin: 10px auto;
+}

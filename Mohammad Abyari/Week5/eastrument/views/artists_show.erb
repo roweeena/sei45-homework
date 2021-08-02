@@ -1,0 +1,30 @@
+<h1>
+  <%= @artist["name"] %>
+</h1>
+<h2> From:
+  <%= @artist["country"] %>
+</h2>
+<h2> Instruments:
+  <%= @artist["instrument"] %>
+</h2>
+
+<div class="image">
+
+  <% unless @artist["image"].nil? || @artist["image"].empty? %>
+  <img class="showing" src= "<%=@artist["image"] %>" alt= "<%= @artist["name"] %>" >
+  <% end %>
+</div>
+<% unless @artist.instrument.nil? %>
+<h3>
+  Main instruments:
+  <a href="/instrument/<%=@artist.instrument.id %>"> </a>
+  <%=@artist.instrument.name %>
+</h3>
+<%end%>
+<div class="controls">
+  <nav>
+    <a href="/artists/<%= @artist["id"] %>/edit"> Edit </a>
+    <a href="/artists/<%= @artist["id"] %>/delete"> Delete </a>
+  </nav>
+
+</div>

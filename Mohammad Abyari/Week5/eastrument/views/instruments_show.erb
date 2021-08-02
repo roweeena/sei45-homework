@@ -1,0 +1,21 @@
+<h1>
+  <%= @instrument["name"] %>
+</h1>
+<h2> Type:
+  <%= @instrument["cat"] %>
+</h2>
+<h2> Geographical Location:
+  <%= @instrument["geo"] %>
+</h2>
+<div class="image">
+
+  <% unless @instrument["image"].nil? || @instrument["image"].empty? %>
+  <img class= "showimg" src="<%= @instrument["image"] %> " alt="<%= @instrument["name"] %> ">
+  <% end %>
+</div>
+<div class="controls" >
+
+  <a href="/instruments/<%= @instrument["id"] %>/edit"> Edit </a>
+  <a href="/instruments/<%= @instrument["id"] %>/delete"> Delete </a>
+
+</div>
