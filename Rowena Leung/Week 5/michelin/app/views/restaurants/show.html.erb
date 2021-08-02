@@ -1,0 +1,20 @@
+<h1><%= @restaurant.name %></h1>
+
+<%= image_tag @restaurant.image, :class => 'feature' if @restaurant.image.present? %>
+
+<ul>
+  <li>Name: <%= @restaurant.name %> </li>
+  <% if @restaurant.chef.present? %>
+  <li>Chef/Owner: <%= link_to @restaurant.chef.name, @restaurant.chef %></li>
+  <% end %>
+  <li>Year opened: <%= @restaurant.year %> </li>
+  <li>Location: <%= @restaurant.location %> </li>
+  <li>Michelin stars: <%= @restaurant.stars %></li>
+
+</ul>
+
+
+<div class="editor">
+  <%= link_to 'Edit Restaurant', edit_restaurant_path(@restaurant) %>
+  <%= link_to 'Delete Restaurant', @restaurant, :method => 'delete', :data => {:confirm => "Are you sure?"} %>
+</div>

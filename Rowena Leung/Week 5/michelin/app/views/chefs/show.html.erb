@@ -1,0 +1,20 @@
+<h1><%= @chef.name %></h1>
+
+<%= image_tag @chef.image, :class => 'feature' if @chef.image.present? %>
+<ul>
+  <li>Name: <%= @chef.name %> </li>
+  <li>Nationality: <%= @chef.nationality %> </li>
+  <li>Michelin stars: <%= @chef.michelin %></li>
+</ul>
+
+<h4>Restaurants:</h4>
+<% @chef.restaurants.each do |restaurant| %>
+<%= link_to image_tag(restaurant.image, :class => "thumb") %>
+<br>
+<%= restaurant.name %>
+<% end %>
+
+<div class="editor">
+  <%= link_to 'Edit Chef', edit_chef_path(@chef) %>
+  <%= link_to 'Delete Chef', @chef, :method => 'delete', :data => {:confirm => "Are you sure?"} %>
+</div>

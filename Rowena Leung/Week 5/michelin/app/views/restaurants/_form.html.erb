@@ -1,0 +1,22 @@
+<%= form_for @restaurant do |f| %>
+
+<%= f.label :name, "Name:" %>
+<%= f.text_field :name, :required => true %>
+
+<%= f.label :year, "Year opened:" %>
+<%= f.number_field :year %>
+
+<%= f.label :location, "Location:" %>
+<%= f.text_field :location%>
+
+<%= f.label :stars, "Number of Michelin stars:" %>
+<%= f.number_field :stars%>
+
+<%= f.label :chef_id, "Chef:" %>
+<%= f.select :chef_id, Chef.pluck(:name, :id), :include_blank => true %>
+
+<%= f.label :image, "Image:" %>
+<%= f.url_field :image%>
+
+<%= f.submit %>
+<% end %>
