@@ -1,0 +1,15 @@
+body {
+  margin: 12px;
+  padding: 10px;
+}
+.color-picker {
+  border: 1px solid black;
+  width: 50vw;
+  height: 50vh;
+  background-color: white;
+}
+
+.container {
+  margin: 20px;
+
+}
