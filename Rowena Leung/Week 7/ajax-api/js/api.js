@@ -1,9 +1,10 @@
 const getMovie = function(){
   event.preventDefault();
+  $('h3, p, h4').empty()
   const search = $('#title').val();
   $.ajax('https://ghibliapi.herokuapp.com/films').done(function (data) {
     let movies = Object.values(data)
-    // console.log(movies);
+     console.log(movies);
     for(let i = 0; i< movies.length; i++){
       let title = movies[i].title;
       let originalTitle = movies[i].original_title;
